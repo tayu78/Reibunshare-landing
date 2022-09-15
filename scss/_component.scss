@@ -1,0 +1,207 @@
+@use 'base' as *;
+nav{
+    // position: fixed;
+    max-width: $max-width;
+    position: absolute;
+    width: 90%;
+    z-index: 100;
+    padding-top: 2rem;
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo img{
+        width: 35px;
+    }
+    .logo span{
+        font-weight: 700;
+    }
+    ul {
+        width: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include for-md-screen {
+            width: 50%;
+        }
+
+        @include for-sm-screen {
+            display: none;
+      
+        }
+    }
+    
+}
+
+
+header{
+    position: relative;
+    height: 100vh;
+
+   @include for-md-screen {
+        padding-top: 35rem;
+        height: auto;
+   }
+
+    @include for-sm-screen {
+        padding-top: 10rem;
+
+  }
+    
+    h1{
+        font-weight: 700;
+        font-size: 3.5rem;
+        line-height: 5.5rem;
+
+        @include for-md-screen {
+            font-size: 2.5rem;
+            line-height: 3.5rem;
+        }
+        @include for-sm-screen {
+            font-size: 2rem;
+            line-height: 3.5rem;
+      }
+       
+    }
+
+    & > div {
+       width: 65%; 
+       position: absolute;
+       margin-top: 15px;
+       left: 0%;
+       top: 50%;
+       transform: translateY(-50%);
+
+       @include for-sm-screen {
+          position: static; 
+          transform: none;
+          width: 100%;
+          text-align: center;
+        }
+
+    }
+    img{
+        width: 55%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-20%);
+
+        @include for-sm-screen {
+            position: static;  
+            transform: none;
+            display: block;
+            width: 80%;
+            margin: 3rem auto;
+      }
+
+    }
+
+    .btn{
+        background: linear-gradient(90deg, #4AE99C 0%, rgba(55, 235, 149, 0.526042) 50.53%, rgba(35, 237, 140, 0) 106.61%);
+        border: 1px solid #4AE99C;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-left: 20%;
+        margin-top: 10%;
+
+        @include for-sm-screen {
+            margin-left: 0;
+        }
+    }
+    
+  
+}
+
+
+
+.main-concept {
+    font-size: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    @include for-md-screen{
+        font-size: 1.2rem;
+    }
+    @include for-sm-screen {
+        margin-top: 5rem;
+    }
+
+    img{
+        display:block;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        @include for-md-screen {
+            width: 130px;
+        }
+
+        @include for-sm-screen {
+            width: 100px;
+        }
+    }
+
+    p{
+        margin-bottom: 1rem ;
+        line-height: 1.2;
+    }
+
+    @include for-sm-screen {
+        font-size: 1rem;
+    }
+
+}
+
+.logo-concept{
+    margin-top: 5rem;
+
+
+    div{
+        display: flex;
+        align-items: center;
+        gap: 10rem;
+        font-weight: 600;
+        font-size: 2.5rem;
+        margin-bottom: 5rem;
+
+        @include for-md-screen {
+           
+            gap: 5rem;
+            font-size: 1.8rem;
+            // margin-bottom: 8rem;
+        }
+
+        @include for-sm-screen {
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+            font-size: 1.5rem;
+            margin-bottom: 8rem;
+        }
+    }
+
+    img{
+        width: 40%;
+        @include for-sm-screen {
+           width: 75%;
+        }
+    }
+    img[alt="book"]{
+        order: 1;
+        @include for-sm-screen {
+           order: 0;
+         }
+    }
+    p {
+        @include for-sm-screen {
+            width: 90%;
+           text-align: center;
+          } 
+    }
+}
+
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #3C4D3E;
+}
