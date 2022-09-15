@@ -212,7 +212,7 @@ header .btn {
 }
 
 .main-concept {
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 90%;
   margin: 0 auto;
 }
@@ -257,10 +257,12 @@ header .btn {
 .logo-concept div {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   gap: 10rem;
   font-weight: 600;
-  font-size: 2.5rem;
-  margin-bottom: 5rem;
+  font-size: 2rem;
+  margin: 0 auto;
+  margin-bottom: 8rem;
 }
 @media (max-width: 1023px) {
   .logo-concept div {
@@ -292,6 +294,9 @@ header .btn {
   .logo-concept img[alt=book] {
     order: 0;
   }
+}
+.logo-concept p {
+  width: 40%;
 }
 @media (max-width: 767px) {
   .logo-concept p {
