@@ -2,11 +2,11 @@
 ## Why I'm going to create this app ?
 I have studied English words for long time with vocabulary books but it is difficult to remember all of them since vocabulary is too many.
 
-the example sentences vocabulary books have are sometimes useful , but many sentence is not useful in daily conversation. 
+The example sentences vocabulary books have are sometimes useful , but many sentence is not useful in daily conversation. 
 
 Sometimes I tried to create my own sentence for each words to memorize easily, but I thought I wish I could see the sentence the native speaker made.
 
-this app help to solve this kind of problem.
+This app should help to solve this kind of problem.
 
 ## What users can do with this app
 
