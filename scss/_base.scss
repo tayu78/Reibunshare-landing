@@ -27,19 +27,15 @@ body{
     box-sizing: border-box;
     background-image: url("../images/bg.png");
     background-repeat: repeat-y;
-    // background-position: right;
-
-    background-size: cover;
+    
     font-family: 'Fredoka', sans-serif;
     color: $font-white;
 
     @include for-md-screen{
     background-position: right;
+    background-size: cover;
     }
-    @include for-sm-screen{
-    background-position: right;
-
-    }
+   
 }
 
 a {
@@ -76,4 +72,8 @@ li {
         color: $font-yellow;
         font-size: 3rem;
         font-weight: 700;
+
+        @include for-sm-screen {
+            font-size: 2.5rem;
+        }
 }

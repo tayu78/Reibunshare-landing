@@ -1,6 +1,5 @@
 @use 'base' as *;
 nav{
-    // position: fixed;
     max-width: $max-width;
     position: absolute;
     width: 90%;
@@ -209,6 +208,7 @@ header{
         display: grid;
         grid-template-columns: 1.5fr 1fr 1.5fr;
         gap: 1rem;
+        justify-content: center;
         @include for-md-screen{
          grid-template-columns: 1fr 1fr;
         }
@@ -264,6 +264,7 @@ header{
         }
         h3 {
             font-size: 2rem ;
+            font-weight: 600;
             @include for-md-screen {
                 font-size: 1.5rem;
             }

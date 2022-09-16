@@ -58,18 +58,13 @@ body {
   box-sizing: border-box;
   background-image: url("../images/bg.png");
   background-repeat: repeat-y;
-  background-size: cover;
   font-family: "Fredoka", sans-serif;
   color: #E0E0E0;
 }
 @media (max-width: 1023px) {
   body {
     background-position: right;
-  }
-}
-@media (max-width: 767px) {
-  body {
-    background-position: right;
+    background-size: cover;
   }
 }
 
@@ -106,6 +101,11 @@ li {
   color: #BFD24E;
   font-size: 3rem;
   font-weight: 700;
+}
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
 }
 
 nav {
@@ -319,6 +319,7 @@ header .btn {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1.5fr;
   gap: 1rem;
+  justify-content: center;
 }
 @media (max-width: 1023px) {
   .how-can-you-use .grid-container {
@@ -372,6 +373,7 @@ header .btn {
 }
 .how-can-you-use .content h3 {
   font-size: 2rem;
+  font-weight: 600;
 }
 @media (max-width: 1023px) {
   .how-can-you-use .content h3 {
