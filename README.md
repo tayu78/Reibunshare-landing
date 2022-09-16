@@ -12,12 +12,14 @@ this app help to solve this kind of problem.
 
 - register words or phrase
 - post example sentence(vocabulary card) 
+- fix(comment) the other learner’s sentence (ex. grammar mistake or not natural)
 - add dialect tag (because expression is totally different with dialect)
 - filter by tags
 - save someone’s vocabulary card into your own vocabulary book
 - save someone’s vocabulary book into your own shelf
 - post with image  to visualize
 - listen how to pronounce ( can check linking and accecnt)
+
 
  not limited with English (can add language tags and filter by them)
 
