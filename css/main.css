@@ -100,6 +100,14 @@ li {
   cursor: pointer;
 }
 
+.section-title {
+  margin-top: 10rem;
+  text-align: center;
+  color: #BFD24E;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
 nav {
   max-width: 1200px;
   position: absolute;
@@ -304,7 +312,75 @@ header .btn {
   }
 }
 
+.how-can-you-use .section-title {
+  margin-bottom: 5rem;
+}
+.how-can-you-use .grid-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+  gap: 1rem;
+}
+@media (max-width: 1023px) {
+  .how-can-you-use .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.how-can-you-use .grid-container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (max-width: 1023px) {
+  .how-can-you-use .grid-container > div {
+    grid-column: span 1;
+  }
+}
+@media (max-width: 767px) {
+  .how-can-you-use .grid-container > div {
+    grid-column: span 2;
+  }
+}
+.how-can-you-use .grid-container > div:nth-of-type(2) {
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+@media (max-width: 1023px) {
+  .how-can-you-use .grid-container > div:nth-of-type(2) {
+    grid-column: span 2;
+    order: -1;
+    width: 30%;
+    justify-self: center;
+  }
+}
+.how-can-you-use img[alt=iphone] {
+  width: 90%;
+}
+.how-can-you-use .content {
+  width: 90%;
+  margin: 0 auto;
+}
+.how-can-you-use .content div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.how-can-you-use .content p {
+  width: 90%;
+  margin: 0 auto;
+}
+.how-can-you-use .content h3 {
+  font-size: 2rem;
+}
+@media (max-width: 1023px) {
+  .how-can-you-use .content h3 {
+    font-size: 1.5rem;
+  }
+}
+
 footer {
+  margin-top: 5rem;
   text-align: center;
   padding: 2rem;
   background: #3C4D3E;

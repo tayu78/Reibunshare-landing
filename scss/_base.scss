@@ -2,10 +2,11 @@
 
 $font-white:#E0E0E0;
 $font-green: #4AE99C;
+$font-yellow : #BFD24E;
 
 $max-width: 1200px;
 
-$breakpoint-tablet: 768px;
+
 
 
 @mixin for-md-screen {
@@ -26,9 +27,12 @@ body{
     box-sizing: border-box;
     background-image: url("../images/bg.png");
     background-repeat: repeat-y;
+    // background-position: right;
+
     background-size: cover;
     font-family: 'Fredoka', sans-serif;
     color: $font-white;
+
     @include for-md-screen{
     background-position: right;
     }
@@ -64,4 +68,12 @@ li {
     border-radius: 7px;
     display: inline-block;
     cursor: pointer;
+}
+
+.section-title {
+        margin-top: 10rem;
+        text-align: center;
+        color: $font-yellow;
+        font-size: 3rem;
+        font-weight: 700;
 }
